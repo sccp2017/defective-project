@@ -1,7 +1,7 @@
 require 'test/unit'
 require_relative '../src/02_expression'
 
-class TypeTest < Test::Unit::TestCase
+class ExpressionTest < Test::Unit::TestCase
   def test_lesseq_more_ten_cond1
     actual = ExpressionProblem.lesseq_more_ten(10)
     expected = 'lessEq'
