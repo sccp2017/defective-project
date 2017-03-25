@@ -1,5 +1,7 @@
 # defective-project
 
+[![CircleCI](https://circleci.com/gh/sccp2017/defective-project.svg?style=svg)](https://circleci.com/gh/sccp2017/defective-project)
+
 このプロジェクトはバグだらけのプロジェクトです。皆さんの力ですべてのバグを取り除いてください。
 
 ## テストの実行方法
