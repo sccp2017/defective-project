@@ -7,12 +7,12 @@
 テストライブラリを取得します。
 
 ```
-$ rake init
+$ bundle install --path vendor/bundle --without production
 ```
 テストを実行します。
 
 ```
-$ rake test
+$ bundle exec ruby test/all_test.rb
 ```
 
 ## バグの取り除き方

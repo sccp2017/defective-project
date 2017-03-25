@@ -4,9 +4,9 @@ machine:
 
 dependencies:
   post:
-    - rake init
+    - bundle install --path vendor/bundle --without production
 
 test:
     post:
-    - rake test
+    - bundle exec ruby test/all_test.rb
 
