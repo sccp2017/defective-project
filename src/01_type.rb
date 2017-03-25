@@ -1,3 +1,4 @@
+# About Type Problem
 module TypeProblem
   def self.string_plus(any1, any2)
     any1 + any2
