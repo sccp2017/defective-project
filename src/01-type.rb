@@ -3,7 +3,7 @@ module TypeProblem
     any1 + any2
   end
 
-  def self.about_diff(num1, num2)
+  def self.round_down_diff(num1, num2)
     num1 - num2
   end
 
