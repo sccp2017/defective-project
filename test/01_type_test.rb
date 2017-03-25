@@ -28,4 +28,15 @@ class TypeTest < Test::Unit::TestCase
 
     assert_true actual
   end
+
+  def test_calc_tax
+    actual1 = TypeProblem::calc_tax(1800, 1.05)
+    expected1 = 1890
+
+    actual2 = TypeProblem::calc_tax(1800, 1.08)
+    expected2 = 1944
+
+    assert_equal expected1, actual1
+    assert_equal expected2, actual2
+  end
 end

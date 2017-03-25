@@ -11,4 +11,8 @@ module TypeProblem
   def self.compare_length(any1, any2)
     any1 == any2
   end
+
+  def self.calc_tax(num, per)
+    num * per
+  end
 end
