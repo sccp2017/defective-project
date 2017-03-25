@@ -36,7 +36,7 @@ class TypeTest < Test::Unit::TestCase
     assert_equal expected, actual
   end
 
-  def test_calc_tax_eight_percen
+  def test_calc_tax_eight_percent
     actual = TypeProblem.calc_tax(1800, 1.08)
     expected = 1944
 
