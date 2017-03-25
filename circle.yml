@@ -4,9 +4,9 @@ machine:
 
 dependencies:
   post:
-    - bundle exec rake init
+    - rake init
 
 test:
     post:
-    - bundle exec rake test
+    - rake test
 
