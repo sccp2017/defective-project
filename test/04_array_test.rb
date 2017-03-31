@@ -15,4 +15,11 @@ class ArrayTest < Test::Unit::TestCase
 
     assert_equal expected, actual
   end
+
+  def test_tail
+    actual = ArrayProblem.tail([1,2,3,4,5])
+    expected = [2,3,4,5]
+
+    assert_equal expected, actual
+  end
 end
