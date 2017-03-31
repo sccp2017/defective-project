@@ -8,4 +8,9 @@ module ArrayProblem
   def self.init(arr)
     arr[1..-1]
   end
+
+  # return an array except the first one
+  def self.tail(arr)
+    arr
+  end
 end
