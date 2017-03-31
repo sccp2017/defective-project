@@ -17,10 +17,9 @@ class ArrayTest < Test::Unit::TestCase
   end
 
   def test_init_null
-    actual = ArrayProblem.init([])
-    expected = []
-
-    assert_equal expected, actual
+    assert_raise RuntimeError, 'Tail of empty array' do
+      ArrayProblem.init([])
+    end
   end
 
   def test_tail
@@ -28,5 +27,11 @@ class ArrayTest < Test::Unit::TestCase
     expected = [2,3,4,5]
 
     assert_equal expected, actual
+  end
+
+  def test_tail_null
+    assert_raise RuntimeError, 'Tail of empty array' do
+      ArrayProblem.tail([])
+    end
   end
 end
