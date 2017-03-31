@@ -8,4 +8,11 @@ class ArrayTest < Test::Unit::TestCase
 
     assert_equal expected, actual
   end
+
+  def test_init
+    actual = ArrayProblem.init([1,2,3,4,5])
+    expected = [1,2,3,4]
+
+    assert_equal expected, actual
+  end
 end
