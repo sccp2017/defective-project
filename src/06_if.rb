@@ -1,5 +1,5 @@
 # About If
 module IfProblem
-  def self.grade(point)
+  def self.query(value)
   end
 end
