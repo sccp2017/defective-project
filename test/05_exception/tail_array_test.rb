@@ -8,4 +8,10 @@ class ArrayTest < Test::Unit::TestCase
 
     assert_equal expected, actual
   end
+
+  def test_tail_with_empty_array
+    assert_raise NoSuchElementError, 'Function denied: empty.tail' do
+      tail([])
+    end
+  end
 end
