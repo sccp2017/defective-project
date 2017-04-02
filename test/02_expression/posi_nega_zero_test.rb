@@ -24,14 +24,14 @@ class ExpressionTest < Test::Unit::TestCase
   end
 
   def test_negative_2
-    actual = lesseq_more_ten(-1234567)
+    actual = posi_nega_zero(-1234567)
     expected = 'negative'
 
     assert_equal expected, actual
   end
 
   def test_zero_1
-    actual = lesseq_more_ten(0)
+    actual = posi_nega_zero(0)
     expected = 'zero'
 
     assert_equal expected, actual
