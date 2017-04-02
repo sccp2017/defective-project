@@ -2,11 +2,7 @@ machine:
   ruby:
     version: 2.2.3
 
-dependencies:
-  post:
-    - bundle install --path vendor/bundle --without production
-
 test:
     post:
-    - bundle exec ruby test/all_test.rb
+    - ruby test/all_test.rb
 
