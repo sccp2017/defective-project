@@ -1,6 +1,7 @@
+# Call given block n times
 def times(n)
-  # Call given block n times
-  # TODO How exasperating it is! Can you replace FOR LOOP with another expression?
+  # TODO It's so exasperating! Can you replace FOR LOOP with another expression?
+  # Of course you shouldn't use times method in Ruby.
   for i in 0..n
     yield
   end
