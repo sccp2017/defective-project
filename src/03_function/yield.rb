@@ -1,0 +1,3 @@
+def cube
+  yield
+end
