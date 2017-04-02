@@ -38,7 +38,7 @@ $ ruby test/0x_hoge/foo_test.rb
 このコマンドが成功したときが、皆さんの勝利となります。
 
 ```
-$ bundle exec ruby test/all_test.rb
+$ ruby test/all_test.rb
 ```
 
 ## すべての終わり
