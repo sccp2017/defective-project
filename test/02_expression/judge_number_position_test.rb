@@ -30,7 +30,7 @@ class ExpressionTest < Test::Unit::TestCase
     assert_equal expected, actual
   end
 
-  def test_zero_1
+  def test_zero
     actual = judge_number_position(0)
     expected = 'zero'
 
