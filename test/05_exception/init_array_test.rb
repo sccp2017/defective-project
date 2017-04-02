@@ -1,5 +1,6 @@
 require 'test/unit'
-require_relative '../../src/04_array/init'
+require_relative '../../src/05_exception/errors'
+require_relative '../../src/05_exception/init_array'
 
 class ArrayTest < Test::Unit::TestCase
   def test_init
