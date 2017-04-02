@@ -2,7 +2,7 @@ require 'test/unit'
 require_relative '../../src/05_exception/errors'
 require_relative '../../src/05_exception/tail_array'
 
-class ArrayTest < Test::Unit::TestCase
+class ExceptionTest < Test::Unit::TestCase
   def test_tail
     actual = tail([1, 2, 3, 4, 5])
     expected = [2, 3, 4, 5]
