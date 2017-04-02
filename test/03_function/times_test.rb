@@ -6,10 +6,11 @@ class FunctionTest < Test::Unit::TestCase
     $stdout = StringIO.new
     times(3){puts "test"}
     actual = $stdout.string
-    expected = """test
+    expected = <<EOS
 test
 test
-"""
+test
+EOS
 
     assert_equal expected, actual
     $stdout = STDOUT
