@@ -1,6 +1,7 @@
 def times(n)
-  # call given block for n times
-  (0..n).each{
+  # Call given block n times
+  # TODO How exasperating it is! Can you replace FOR LOOP with another expression?
+  for i in 0..n
     yield
-  }
+  end
 end
