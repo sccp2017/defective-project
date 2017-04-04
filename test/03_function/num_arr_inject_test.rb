@@ -8,4 +8,11 @@ class FunctionTest < Test::Unit::TestCase
 
     assert_equal expected, actual
   end
+
+  def test_num_arr_inject_empty
+    actual = num_arr_inject([], 0){|acc, n| acc + n}
+    expected = nil
+
+    assert_equal expected, actual
+  end
 end
