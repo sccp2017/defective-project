@@ -3,7 +3,7 @@
 # num_arr_inject([1,2,3], 0){|acc, n| acc + n}
 # => 15
 def num_arr_inject(arr, m, &block)
-  if arr.empty? == true then
+  if arr.empty? then
     m
   else
     # What value or variable should be placed in arguments of yield statement?
