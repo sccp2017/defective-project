@@ -1,2 +1,2 @@
-def remove_last_bits(value, num_of_bits)
+def remove_last_bits(bits, num_of_bits)
 end
