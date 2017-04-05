@@ -17,8 +17,8 @@ class TypeTest < Test::Unit::TestCase
   end
 
   def test_count_trailing_zero_3
-    actual = count_trailing_zero('00000000000000'.to_i(2))
-    expected = 0
+    actual = count_trailing_zero('0'.to_i(2))
+    expected = 1
 
     assert_equal expected, actual
   end
