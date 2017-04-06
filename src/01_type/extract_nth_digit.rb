@@ -1,3 +1,3 @@
-def take_nth_digit
-  "#{}"
+def take_nth_digit(digit)
+
 end
