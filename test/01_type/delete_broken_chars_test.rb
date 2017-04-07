@@ -22,4 +22,11 @@ class TypeTest < Test::Unit::TestCase
 
     assert_equal expected, actual
   end
+
+  def test_delete_broken_chars_4
+    actual = delete_broken_chars('string', 'NoMatch')
+    expected = 'string'
+
+    assert_equal expected, actual
+  end
 end
