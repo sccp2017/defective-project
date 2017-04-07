@@ -1,3 +1,4 @@
-def take_nth_digit(digit)
+# Extract n-th digit of given number
+def extract_nth_digit(num, digit)
 
 end
