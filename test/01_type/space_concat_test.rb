@@ -8,11 +8,4 @@ class TypeTest < Test::Unit::TestCase
 
     assert_equal expected, actual
   end
-
-  def test_space_concat_cond2
-    actual = space_concat("it'a", 'true', 'wolrd')
-    expected = "it'a true wolrd"
-
-    assert_equal expected, actual
-  end
 end
