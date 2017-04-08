@@ -45,4 +45,4 @@ $ ruby test/all_test.rb
 
 すべてのバグが取り除かれれば、この説明文の一番上のバッジが```PASSED```となり緑になるはずです。みなさん、それを目指しましょう。また、テストをただ通すだけではいけません。誰が見てもわかりやすいスマートな解法を目指してみましょう。
 
-
+*sample addition for pull request demonstration*
