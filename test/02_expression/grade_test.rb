@@ -2,7 +2,6 @@ require 'test/unit'
 require_relative '../../src/02_expression/grade.rb'
 
 class ExpressionTest < Test::Unit::TestCase
-
   def test_grade_corner_cases
     points = [-1, 0, 20, 40, 60, 80, 100, 101]
     actual = points.map { |point| grade(point) }
@@ -18,5 +17,4 @@ class ExpressionTest < Test::Unit::TestCase
 
     assert_equal expected, actual
   end
-
 end
