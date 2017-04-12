@@ -36,5 +36,4 @@ class ExpressionTest < Test::Unit::TestCase
 
     assert_equal expected, actual
   end
-
 end
