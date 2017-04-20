@@ -1,3 +1,4 @@
 def one_hundred?(num)
-  if num == 100 then true end
+  true if num == 100
+  false if num != 100
 end
