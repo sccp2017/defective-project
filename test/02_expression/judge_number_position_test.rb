@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/02_expression/judge_number_position.rb'
+require_relative '../../src/02_expression/judge_number_position'
 
 class ExpressionTest < Test::Unit::TestCase
   def test_judge_number_position_1

@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/02_expression/count_words.rb'
+require_relative '../../src/02_expression/count_words'
 
 class ExpressionTest < Test::Unit::TestCase
   def test_word_count_cond1

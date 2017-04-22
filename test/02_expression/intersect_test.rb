@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/02_expression/intersect.rb'
+require_relative '../../src/02_expression/intersect'
 
 class IntersectTest < Test::Unit::TestCase
   def test_intersect_1

@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/02_expression/calc_bmi.rb'
+require_relative '../../src/02_expression/calc_bmi'
 
 class ExpressionTest < Test::Unit::TestCase
   def test_calc_bmi_cond1
