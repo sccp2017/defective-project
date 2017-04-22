@@ -11,7 +11,7 @@ class ExpressionTest < Test::Unit::TestCase
 
   def test_leap_year_cond2
     actual = leap_year?(1908)
-    expected = false
+    expected = true
 
     assert_equal expected, actual
   end

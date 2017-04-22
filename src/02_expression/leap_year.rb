@@ -1,3 +1,3 @@
-def leap_yaer?
+def leap_year?(year)
   true
 end
