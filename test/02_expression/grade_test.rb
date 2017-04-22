@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/02_expression/grade.rb'
+require_relative '../../src/02_expression/grade'
 
 class ExpressionTest < Test::Unit::TestCase
   def test_grade_corner_cases

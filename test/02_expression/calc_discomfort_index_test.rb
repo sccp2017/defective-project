@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/02_expression/calc_discomfort_index.rb'
+require_relative '../../src/02_expression/calc_discomfort_index'
 
 class ExpressionTest < Test::Unit::TestCase
   def test_calc_discomfort_index_cond1

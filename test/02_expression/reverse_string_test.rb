@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/02_expression/reverse_string.rb'
+require_relative '../../src/02_expression/reverse_string'
 
 class ExpressionTest < Test::Unit::TestCase
   def test_reverse_string_cond1

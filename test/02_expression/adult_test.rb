@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/02_expression/adult.rb'
+require_relative '../../src/02_expression/adult'
 
 class ExpressionTest < Test::Unit::TestCase
   def test_adult_cond1
