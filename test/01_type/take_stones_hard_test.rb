@@ -4,8 +4,7 @@ require_relative '../../src/01_type/take_stones_hard'
 =begin
 
 There are 3 mountains of stones.
-Lucy and Alice alternately choose a mountain
- that is not empty and take one or more stones from there.
+Lucy and Alice alternately choose a mountain that is not empty and take one or more stones from there.
 Start from Lucy's turn. The person who took the last stone is the winner.
 When they do their best, which one will win.
 
