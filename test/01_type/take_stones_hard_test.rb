@@ -15,7 +15,7 @@ Otherwise, return false.
 
 take_stones(a, b, c)
 
-a: mountain_1 b: mountain_2 c: mountain_3
+a, b and c are the number of stones in each mountain.
 
 1 <= a,b,c <= 10^9
 
