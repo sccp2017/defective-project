@@ -22,4 +22,6 @@ require_relative 'frame_test'
 require_relative 'chessboard_test'
 require_relative 'intersect_CC_test'
 require_relative 'number_of_substring_test'
-
+require_relative 'map_even_odd_test'
+require_relative 'take_until_zero'
+require_relative 'filter_even_index'
