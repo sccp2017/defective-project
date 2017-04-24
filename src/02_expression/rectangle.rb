@@ -1,3 +1,3 @@
 def rectangle(h, w)
-    "##\n##"
+  "##\n##"
 end
