@@ -21,3 +21,5 @@ require_relative 'rectangle_test'
 require_relative 'frame_test'
 require_relative 'chessboard_test'
 require_relative 'intersect_CC_test'
+require_relative 'number_of_substring_test'
+

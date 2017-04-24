@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/02_expression/number_of_substring.rb'
+require_relative '../../src/02_expression/number_of_substring'
 
 class ExpressionTest < Test::Unit::TestCase
   def test_number_of_substring1
