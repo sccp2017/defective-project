@@ -3,13 +3,19 @@ require_relative '../../src/01_type/take_stones_hard'
 
 =begin
 
-There are 3 mountains of stones. Lucy and Alice alternately choose a mountain that is not empty and take one or more stones from there. Start from Lucy's turn. The person who took the last stone is the winner. When they do their best, which one will win.
+There are 3 mountains of stones.
+Lucy and Alice alternately choose a mountain
+ that is not empty and take one or more stones from there.
+Start from Lucy's turn. The person who took the last stone is the winner.
+When they do their best, which one will win.
 
 If Lucy win, return true.
 Otherwise, return false.
 
 
 take_stones(a, b, c)
+
+a: mountain_1 b: mountain_2 c: mountain_3
 
 1 <= a,b,c <= 10^9
 
