@@ -71,4 +71,20 @@ class ExpressionTest < Test::Unit::TestCase
 
     assert_equal expected, actual
   end
+  def test_two_rectangles_of_area_cond6
+    ###########
+    #..OOOOO..#
+    #..OOOOO..#
+    #OOOOOOOOO#
+    #OOOOOOOOO#
+    #OOOOOOOOO#
+    #..OOOOO..#
+    #..OOOOO..#
+    ###########
+    actual = two_rectangles_of_area(2, 0, 7, 7, 0, 2, 9, 5)
+    expected = 47
+    
+    assert_equal expected, actual
+  end
+
 end
