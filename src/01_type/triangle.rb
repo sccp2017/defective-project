@@ -1,3 +1,3 @@
 def triangle?(a, b, c)
-  a ** 2 + b ** 2 == c ** 2
+  (a + b > c) & (b + c > a) & (c + a > b)
 end
