@@ -1,0 +1,2 @@
+def palindrome?(text)
+end
