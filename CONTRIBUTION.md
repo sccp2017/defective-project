@@ -26,13 +26,15 @@ As you keep the guidlines and do not submit duplicated questions, no matter how 
 
 At least, you had better pass single tests of your submissions.
 
-```console
+```bash
 # whole test
 $ ruby test/all_test.rb
 
 # partial test
-e.g.) $ ruby test/01_type/partial_test.rb
+# e.g.)
+$ ruby test/01_type/partial_test.rb
 
 # single test
-e.g.) $ ruby test/01_type/solve_equation_test.rb
+# e.g.)
+$ ruby test/01_type/solve_equation_test.rb
 ```
