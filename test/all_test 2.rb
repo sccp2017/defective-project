@@ -1,6 +1,0 @@
-require 'test/unit'
-require_relative '01_type/all_test'
-require_relative '02_expression/all_test'
-require_relative '03_function/all_test'
-require_relative '04_array/all_test'
-require_relative '05_exception/all_test'
