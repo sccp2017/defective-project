@@ -1,3 +1,3 @@
-def is_number?(str)
+def number?(str)
   str ? true : false
 end

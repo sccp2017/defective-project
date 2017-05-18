@@ -2,7 +2,7 @@ require 'test/unit'
 require_relative '../../src/01_type/space_concat'
 
 class TypeTest < Test::Unit::TestCase
-  def test_space_concat_cond1
+  def test_space_concat
     actual = space_concat('Hello,', 'World')
     expected = 'Hello, World'
 
