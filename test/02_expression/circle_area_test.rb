@@ -6,7 +6,7 @@ class FunctionTest < Test::Unit::TestCase
     actual = circle_area(10)
     expected = 10 * 10 * Math::PI
 
-    assert (expected - actual) < 0.1
+    assert expected - actual < 0.1
   end
 
   def test_circle_area2
