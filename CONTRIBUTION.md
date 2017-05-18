@@ -21,3 +21,18 @@ As you keep the guidlines and do not submit duplicated questions, no matter how 
 > end
 > ```
 > This program will raise sysntax error, but this case is allowed because the purpose of this question is aimed at removing this syntax error.
+
+### Test
+
+At least, you had better pass single tests of your submissions.
+
+```console
+# whole test
+$ ruby test/all_test.rb
+
+# partial test
+e.g.) $ ruby test/01_type/partial_test.rb
+
+# single test
+e.g.) $ ruby test/01_type/solve_equation_test.rb
+```
