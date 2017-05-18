@@ -1,3 +1,3 @@
-def chassboard(h, w)
+def chessboard(h, w)
   "##\n##"
 end
