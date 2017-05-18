@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/01_type/orthogonal_vectors'
+require_relative '../../src/04_array/orthogonal_vectors'
 
 class TypeTest < Test::Unit::TestCase
   def test_orthogonal_vectors_cond1

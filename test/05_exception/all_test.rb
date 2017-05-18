@@ -1,6 +1,3 @@
 require 'test/unit'
-Dir['./*.rb'].each {|file|
-  if file != 'all_test.rb' then
-    require file
-  end
-}
+Dir['./*.rb'].reject { |file| file == 'all_test.rb' }
+.each { |file| require_relative file }
