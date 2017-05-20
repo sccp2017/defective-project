@@ -1,0 +1,3 @@
+def multiplying(n)
+
+end
