@@ -1,3 +1,3 @@
 def round_ones_place(val)
-  val
+  (val).infinite?
 end
