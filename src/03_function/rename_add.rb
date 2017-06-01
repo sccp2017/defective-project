@@ -1,6 +1,5 @@
 def concat_3strings(a, b, c)
-  tmp = add(a, b)
-  add(tmp, c)
+  add(add(a, b), c)
 end
 
 # Rename this function
