@@ -5,5 +5,9 @@
 # => 'a'
 
 def alphabet?(c)
-  'alph'
+  if c.ord>64 && c.ord<91 || c.ord>96 && c.ord<123 then
+    'alph'
+  else
+    'other'
+  end
 end
