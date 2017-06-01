@@ -1,7 +1,12 @@
 def even?(num)
-  if num % 2 = 0
-    'even'
+  if num % 2 == 0
+    
+    true
+    
   else
-    'odd'
+    
+    false
+    
   end
+  
 end
