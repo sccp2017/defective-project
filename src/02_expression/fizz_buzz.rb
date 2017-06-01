@@ -1,11 +1,12 @@
 def fizz_buzz(n)
-  tail = if true then
+  tail = if n % 15 == 0 then
     'FizzBuzz'
-  elsif true then
+  elsif n % 3 == 0 then
     'Fizz'
-  elsif true then
+  elsif n % 5 == 0 then
     'Buzz'
   else
+      n
   end
 
   if n > 1 then
