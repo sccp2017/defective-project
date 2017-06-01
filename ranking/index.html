@@ -1,83 +1,11 @@
-<html><head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-<link rel="stylesheet" href="theme.css" type="text/css">
-  </head><body>
-    <script type="text/javascript">
-function sort(contributors){
-  var items = Object.keys(contributors).map(function(key) {
-    return [key, contributors[key]];
-  });
-  items.sort(function(first, second) {
-    return second[1] - first[1];
-  });
-  var tb = document.getElementById('ranking');
-  for (i in items){
-    var tr = document.createElement('tr');
-    var td1 = document.createElement('td');
-    td1.appendChild(document.createTextNode( parseInt(i) + 1));
-    var td2 = document.createElement('td');
-    td2.appendChild(document.createTextNode(items[i][0]));
-    var td3 = document.createElement('td');
-    td3.appendChild(document.createTextNode(items[i][1]));
-    tr.appendChild(td1);
-    tr.appendChild(td2);
-    tr.appendChild(td3);
-    tb.appendChild(tr);
-  }
-}
-var contributors = {};
-function get(i){
-  (function(){
-    xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function(){
-      if (this.readyState==4 && this.status==200) {
-        console.log(this.response.length);
-        if (this.response.length == 0){ sort(contributors); return false; }
-        for (item of this.response){
-          if (['s124', 's125'].indexOf(item.user.login.substring(0, 4)) < 0){ continue; }
-            if (contributors[item.user.login] == null){
-            contributors[item.user.login] = 0;
-            }
-            contributors[item.user.login] ++;
-            }
-            console.log(contributors);
-            get(i + 1);
-            }
-            };
-            var endpoint = 'https://api.github.com/repos/sccp2017/defective-project/pulls?state=closed&per_page=100&page=' + i;
-            xhr.responseType = 'json';
-            xhr.open('GET',endpoint,true);
-            xhr.send();
-            })(i);
-            }
-            get(1);
-    </script>
-    <div class="py-5 section text-center">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-md-12">
-            <h1 class="text-primary">SCCP2017 Contribution Ranking</h1>
-
-            <p class="lead">Who is the best contributor in SCCP2017?</p>
-          </div>
-        </div>
-      </div>
-    </div><div class="py-5"><div class="container"><div class="row"><div class="col-md-12"><table class="table">
-              <thead>
-                <tr>
-                  <th>Place</th>
-                  <th>ID</th>
-                  <th>PRs</th>
-                </tr>
-              </thead>
-              <tbody id="ranking">
-              </tbody>
-            </table></div></div></div></div><script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-            <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
-
-
-  </body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Visual FizzBuzz</title>
+    <meta name="viewport" content="with=devide-width">
+  </head>
+  <body>
+    <div id="content"></div>
+  <script type="text/javascript" src="bundle.js"></script></body>
+</html>
