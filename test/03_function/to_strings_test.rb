@@ -3,7 +3,7 @@ require_relative '../../src/03_function/to_strings'
 
 class FunctionTest < Test::Unit::TestCase
   def test_to_strings_cond1
-    actual = to_strings([12,4,78,9])
+    actual = to_strings([12, 4,78 ,9])
     expected = ['12', '4', '78', '9']
 
     assert_equal expected, actual
