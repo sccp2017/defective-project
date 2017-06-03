@@ -1,3 +1,4 @@
 def leap_year?(year)
-  true
+  require "date"
+  Date.new(year).leap?
 end
