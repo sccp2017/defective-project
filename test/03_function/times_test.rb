@@ -18,9 +18,9 @@ EOS
 
   def test_zero_times
     $stdout = StringIO.new
-    times(0){puts "test"}
+    times(0) { puts 'test' }
     actual = $stdout.string
-    expected = ""
+    expected = ''
 
     assert_equal expected, actual
     $stdout = STDOUT
@@ -28,9 +28,9 @@ EOS
 
   def test_negative_times
     $stdout = StringIO.new
-    times(-999){puts "test"}
+    times(-999) { puts 'test' }
     actual = $stdout.string
-    expected = ""
+    expected = ''
 
     assert_equal expected, actual
     $stdout = STDOUT
