@@ -1,3 +1,5 @@
 def times(n)
-  # Call given block n times
+    n.times {
+        yield
+    }
 end
