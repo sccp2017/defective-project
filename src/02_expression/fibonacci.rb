@@ -1,5 +1,12 @@
 def fibonacci(num)
-  return 0 if num.zero?
-  return 1 if num == 1
-  return fibonacci(num-2) + fibonacci(num-1)
+    memo = {}
+    fibo = lambda{|n|
+        return 0 if n.zero?
+        return 1 if n == 1
+        if !memo.key?(n.to_s) then
+            memo[n.to_s] = fibo.call(n-1) + fibo.call(n-2)
+        end
+        memo[n.to_s]
+    }
+    fibo.call(num)
 end
