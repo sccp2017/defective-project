@@ -1,11 +1,14 @@
 require 'test/unit'
-require_relative '../../src/03_function/times'
+require_relative '../../src/03_function/times_normal'
+
+# Tests is that compare standard output with String values.
 
 class FunctionTest < Test::Unit::TestCase
   def test_times
     $stdout = StringIO.new
     times(3) { puts 'test' }
     actual = $stdout.string
+
     expected = <<EOS
 test
 test
@@ -18,9 +21,10 @@ EOS
 
   def test_zero_times
     $stdout = StringIO.new
-    times(0){puts "test"}
+    times(0) { puts 'test' }
     actual = $stdout.string
-    expected = ""
+
+    expected = ''
 
     assert_equal expected, actual
     $stdout = STDOUT
@@ -28,9 +32,10 @@ EOS
 
   def test_negative_times
     $stdout = StringIO.new
-    times(-999){puts "test"}
+    times(-999) { puts 'test' }
     actual = $stdout.string
-    expected = ""
+
+    expected = ''
 
     assert_equal expected, actual
     $stdout = STDOUT
