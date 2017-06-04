@@ -1,4 +1,4 @@
-# You study "splat operator" if you solve
+# You study "splat operator" when you solve
 
 def head(arr)
 end
