@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/03_function/times'
+require_relative '../../src/03_function/times_normal'
 
 # Tests is that compare standard output with String values.
 

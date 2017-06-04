@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/03_function/to_strings'
+require_relative '../../src/03_function/to_strings_easy'
 
 class FunctionTest < Test::Unit::TestCase
   def test_to_strings_cond1

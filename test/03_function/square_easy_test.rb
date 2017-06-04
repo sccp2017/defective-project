@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/03_function/square'
+require_relative '../../src/03_function/square_easy'
 
 class FunctionTest < Test::Unit::TestCase
   def test_square_cond1

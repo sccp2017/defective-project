@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/03_function/run_if'
+require_relative '../../src/03_function/run_if_normal'
 
 class FunctionTest < Test::Unit::TestCase
   def test_run_if_cond1
