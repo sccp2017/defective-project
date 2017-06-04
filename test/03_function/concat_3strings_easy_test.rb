@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/03_function/rename_add'
+require_relative '../../src/03_function/concat_3strings_easy'
 
 class FunctionTest < Test::Unit::TestCase
   def test_concat_3strings_cond1
