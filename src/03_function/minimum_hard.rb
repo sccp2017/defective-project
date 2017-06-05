@@ -1,3 +1,3 @@
 # You can not use loop and recursive.
-def min(arr)
+def minimum(arr)
 end
