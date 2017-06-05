@@ -1,5 +1,18 @@
 require 'test/unit'
-require_relative '../../src/03_function/sum_of_multiples'
+require_relative '../../src/03_function/sum_of_multiples_hard'
+
+=begin
+- multiples N upto M
+  - [N*1, N*2, N*3, ... N*X] (N*X < M)
+- sum of multiples [A, B, C, ...] upto M
+  - sum(multiples A upto M, multiples B upto M, ...) except dupliations
+
+e.g)
+sum of multiples [3, 4] upto 20
+= multiples(3, 20) + multiples (4, 20) - duplications
+= [3, 6, 9, 12, 15, 18] + [4, 8, 12, 16] - [12]
+
+=end
 
 class FunctionTest < Test::Unit::TestCase
 

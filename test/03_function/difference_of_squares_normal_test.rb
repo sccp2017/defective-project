@@ -1,5 +1,14 @@
 require 'test/unit'
-require_relative '../../src/02_expression/difference_of_squares'
+require_relative '../../src/03_function/difference_of_squares_normal'
+
+=begin
+- square of sum N
+  - (1 + 2 + 3 + ... + N)^2
+- sum of squares N
+  - (1^2 + 2^ + 3^2 + ... + N^2)
+- difference
+  - (square of sum) - (sum of squares)
+=end
 
 class ExpressionTest < Test::Unit::TestCase
 
