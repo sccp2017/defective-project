@@ -17,20 +17,13 @@ class FunctionTest < Test::Unit::TestCase
   end
 
   def test_zip_normal_cond3
-    actual = zip([1, 2, 3], [4, 5])
-    expected = [[1, 4], [2, 5]]
-
-    assert_equal expected, actual
-  end
-
-  def test_zip_normal_cond4
     actual = zip([1, 2], [3, 4, 5])
     expected = [[1, 3], [2, 4]]
 
     assert_equal expected, actual
   end
 
-  def test_zip_normal_cond5
+  def test_zip_normal_cond4
     actual = zip([1, 2, 3], [4, 5, 6])
     expected = [[1, 4], [2, 5], [3, 6]]
 
