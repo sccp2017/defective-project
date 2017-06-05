@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/02_expression/raindrops'
+require_relative '../../src/02_expression/raindrops_normal'
 
 =begin
 Convert a number to a string, the contents of which depend on the number's factors.
