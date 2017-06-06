@@ -1,7 +1,11 @@
 # Combines all elements of given array recursively
 # by applying a binary operation which specified by a block.
 def map(arr, &block)
-  if arr.empty?
-  else
+  result = []
+  if !arr.empty?
+    arr.each {|x|
+        result.push block.call(x)
+    }
   end
+  result
 end
