@@ -1,3 +1,3 @@
 def number?(str)
-  str ? true : false
+  str.class == Fixnum
 end

@@ -5,7 +5,7 @@
 # => 'a'
 
 def alphabet?(c)
-  if (64..91).include?(c.ord) || c.ord>96 && c.ord<123 then
+  if c.ord>64 && c.ord<91 || c.ord>96 && c.ord<123 then
     'alph'
   else
     'other'
