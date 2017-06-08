@@ -4,7 +4,7 @@ def map(arr, &block)
     count = 0
     fuc = lambda {
         return arr if arr.size == count
-        arr.push block.call(arr.shift)
+        arr << block.call(arr.shift)
         count += 1
         fuc.call
     }
