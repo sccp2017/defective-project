@@ -10,21 +10,21 @@ class FunctionTest < Test::Unit::TestCase
   end
 
   def test_factorize2()
-    expected = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+    expected = [7, 13, 19, 29, 37]
     actual = primeFactorization(expected.inject(:*))
 
     assert_equal expected, actual
   end
 
   def test_factorize3()
-    expected = [4639, 6469, 8539, 9973]
+    expected = [97, 109, 131, 149]
     actual = primeFactorization(expected.inject(:*))
 
     assert_equal expected, actual
   end
 
   def test_factorize4()
-    expected = [2017, 8689, 24077, 53527, 64601, 99881]
+    expected = [2, 4639, 9973]
     actual = primeFactorization(expected.inject(:*))
 
     assert_equal expected, actual
