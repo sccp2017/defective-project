@@ -4,7 +4,7 @@ def map(arr, &block)
     if arr.empty?
         arr
     else
-        n = block.call arr.pop
-        map(arr, &block) << n
+        head, *tail = arr
+        map(tail, &block).unshift(block.call head)
     end
 end
