@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/03_function/gcd_lcm'
+require_relative '../../src/03_function/gcd_lcm_hard'
 
 class GcdTest < Test::Unit::TestCase
     def test_gcd_two_args
