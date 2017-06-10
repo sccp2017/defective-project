@@ -1,12 +1,7 @@
 # Combines all elements of given array recursively
 # by applying a binary operation which specified by a block.
 def map(arr, &block)
-    count = 0
-    fuc = lambda {
-        return arr if arr.size == count
-        arr << block.call(arr.shift)
-        count += 1
-        fuc.call
-    }
-    fuc.call
+    return arr if arr.empty?
+    n = block.call arr.pop
+    return map(arr, &block) << n
 end
