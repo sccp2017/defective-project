@@ -5,6 +5,6 @@ def map(arr, &block)
         arr
     else
         head, *tail = arr
-        map(tail, &block).unshift(block.call head)
+        [block.call(head), *map(tail, &block)]
     end
 end
