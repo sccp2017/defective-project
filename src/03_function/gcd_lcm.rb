@@ -1,16 +1,20 @@
 def gcdOfTwo(n, m)
     #Implement with recursion.
-    return m if n % m == 0
-    gcdOfTwo(n, n % m)
+    if n % m == 0
+        m
+    else
+        gcdOfTwo(m, n % m)
+    end
 end
 
 def gcd(*nums)
     #Implement with a certain higher order function and gcdOfTwo.
-    g = gcdOfTwo(nums.max, nums.min)
-    return g if nums.length == 2
-    nums.delete(nums.max)
-    nums.delete(nums.min)
-    gcd(g, *nums)
+    if nums.length == 2
+        gcdOfTwo(*nums)
+    else
+        first, second, *other = nums
+        gcd(gcdOfTwo(first, second), *other)
+    end
 end
 
 def lcmOfTwo(n, m)
@@ -20,9 +24,10 @@ end
 
 def lcm(*nums)
     #Implement with a certain higher order function and lcmOfTwo.
-    l = lcmOfTwo(nums.max, nums.min)
-    return l if nums.length == 2
-    nums.delete(nums.max)
-    nums.delete(nums.min)
-    lcm(l, *nums)
+    if nums.length == 2
+        lcmOfTwo(*nums)
+    else
+        first, second, *other = nums
+        lcm(lcmOfTwo(first, second), *other)
+    end
 end
