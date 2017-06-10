@@ -1,7 +1,3 @@
 def adult?(age)
-  if age >= 20
-    true
-  else
-    false
-  end
+  age >= 20 ? true : false
 end
