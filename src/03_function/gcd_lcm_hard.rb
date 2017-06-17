@@ -24,13 +24,10 @@ end
 
 def lcm(*nums)
     #Implement with a certain higher order function and lcmOfTwo.
-<<<<<<< HEAD:src/03_function/gcd_lcm_hard.rb
-=======
     if nums.length == 2
         lcmOfTwo(*nums)
     else
         first, second, *other = nums
         lcm(lcmOfTwo(first, second), *other)
     end
->>>>>>> bf6dfc7e29ec02aca80c238acb920c0b3dc91daf:src/03_function/gcd_lcm.rb
 end
