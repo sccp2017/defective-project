@@ -1,11 +1,19 @@
 def square_of_sum(n)
-  1
+  sum=0
+  for i in 1..n do
+    sum += i
+  end
+  sum ** 2
 end
 
 def sum_of_squares(n)
-  1
+  sum=0
+  for i in 1..n do
+    sum += i ** 2
+  end
+  sum
 end
 
 def difference(n)
-  1
+  square_of_sum(n) - sum_of_squares(n)
 end
