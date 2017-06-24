@@ -14,8 +14,8 @@ Therefore, one of a rule between 'egg' and 'fat' is [{'e' => 'f', 'g' => 'a'}, {
 
 Note1: when a text has same charcters, a rule just apply to the first character.
 Note2: Please find one of a rule from many rules that have same feature.
-Node3: Any characters of texts are alphabet.
+Node3: Text length is less than 10, and its any characters are alphabet.
 =end
 
-def find_rule(texts, rule)
+def find_rules(text1, text2)
 end
