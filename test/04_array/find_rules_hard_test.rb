@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/04_array/find_rule_hard'
+require_relative '../../src/04_array/find_rules_hard'
 
 def apply_rules(text, rules)
   rules.each{|rule|
@@ -17,66 +17,66 @@ def apply_rules(text, rules)
 end
 
 class FunctionTest < Test::Unit::TestCase
-  def test_find_rule1
+  def test_find_rules1
     origin = 'abc'
     goal   = 'ABC'
-    found_rule = find_rules(origin, goal)
-    rule_applied = apply_rules(origin, found_rule)
+    found_rules = find_rules(origin, goal)
+    rules_applied = apply_rules(origin, found_rules)
 
-    assert_equal goal, rule_applied
+    assert_equal goal, rules_applied
   end
 
   def test_find_rule2
     origin = 'abc'
     goal   = 'AAA'
-    found_rule = find_rules(origin, goal)
-    rule_applied = apply_rules(origin, found_rule)
+    found_rules= find_rules(origin, goal)
+    rules_applied = apply_rules(origin, found_rules)
 
-    assert_equal goal, rule_applied
+    assert_equal goal, rules_applied
   end
 
   def test_find_rule3
     origin = 'aaaaa'
     goal   = 'aabaa'
-    found_rule = find_rules(origin, goal)
-    rule_applied = apply_rules(origin, found_rule)
+    found_rules = find_rules(origin, goal)
+    rules_applied = apply_rules(origin, found_rules)
 
-    assert_equal goal, rule_applied
+    assert_equal goal, rules_applied
   end
 
   def test_find_rule4
     origin = 'abcabc'
     goal   = 'AAABBB'
-    found_rule = find_rules(origin, goal)
-    rule_applied = apply_rules(origin, found_rule)
+    found_rules = find_rules(origin, goal)
+    rules_applied = apply_rules(origin, found_rules)
 
-    assert_equal goal, rule_applied
+    assert_equal goal, rules_applied
   end
 
   def test_find_rule5
     origin = 'NoWeCant'
     goal   = 'YesWeCan'
-    found_rule = find_rules(origin, goal)
-    rule_applied = apply_rules(origin, found_rule)
+    found_rules = find_rules(origin, goal)
+    rules_applied = apply_rules(origin, found_rules)
 
-    assert_equal goal, rule_applied
+    assert_equal goal, rules_applied
   end
 
   def test_find_rule6
     origin = 'abcdedcba'
     goal   = 'gfedcdefg'
-    found_rule = find_rules(origin, goal)
-    rule_applied = apply_rules(origin, found_rule)
+    found_rules = find_rules(origin, goal)
+    rules_applied = apply_rules(origin, found_rules)
 
-    assert_equal goal, rule_applied
+    assert_equal goal, rules_applied
   end
 
   def test_find_rule7
     origin = 'aaaaaaaaaa'
     goal   = 'abcdefghij'
-    found_rule = find_rules(origin, goal)
-    rule_applied = apply_rules(origin, found_rule)
+    found_rules = find_rules(origin, goal)
+    rules_applied = apply_rules(origin, found_rules)
 
-    assert_equal goal, rule_applied
+    assert_equal goal, rules_applied
   end
 end
