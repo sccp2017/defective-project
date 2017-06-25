@@ -9,14 +9,14 @@
 # [(1), 4, 3, 2, 5]   => Left end is minimum value
 
 def bswap(arr)
-    if arr.length <= 1
+    if arr.length == 1
         arr
     else
-        *head, second, tail = arr
-        if second > tail
-            bswap(head + [tail]) + [second]
+        f, s, *tail = arr
+        if f > s
+            [s] + bswap([f] + tail)
         else
-            bswap(head + [second]) + [tail]
+            [f] + bswap([s] + tail)
         end
     end
 end
@@ -25,7 +25,7 @@ def bsort(arr)
     if arr.empty?
         []
     else
-        head, *tail = bswap(arr)
-        [head] + bsort(tail)
+        *head, tail = bswap(arr)
+        bsort(head) + [tail]
     end
 end

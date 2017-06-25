@@ -46,7 +46,7 @@ class FunctionTest < Test::Unit::TestCase
 
   def test_bswap_cond1
     actual = bswap([4, 3, 1, 5, 2])
-    expected = [1, 4, 3, 2, 5]
+    expected = [3, 1, 4, 2, 5]
     assert_equal expected, actual
   end
 end
