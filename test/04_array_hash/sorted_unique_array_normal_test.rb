@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/04_array/sorted_unique_array_normal'
+require_relative '../../src/04_array_hash/sorted_unique_array_normal'
 
 class ArrayTest < Test::Unit::TestCase
   def test_sorted_unique_array_test_integer

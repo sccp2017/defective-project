@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/04_array/max_index'
+require_relative '../../src/04_array_hash/max_index'
 
 class FunctionTest < Test::Unit::TestCase
   def test_max_index1

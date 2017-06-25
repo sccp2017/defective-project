@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/04_array/count_trailing_zero_normal'
+require_relative '../../src/04_array_hash/count_trailing_zero_normal'
 
 class TypeTest < Test::Unit::TestCase
   def test_count_trailing_zero_1
