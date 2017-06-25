@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/04_array/prime_factorization_hard'
+require_relative '../../src/04_array_hash/prime_factorization_hard'
 
 class FunctionTest < Test::Unit::TestCase
   def test_factorize1()

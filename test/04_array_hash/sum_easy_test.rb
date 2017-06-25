@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/04_array/sum_easy'
+require_relative '../../src/04_array_hash/sum_easy'
 
 class ArrayTest < Test::Unit::TestCase
   def test_sum
