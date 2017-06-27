@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/04_array/range'
+require_relative '../../src/04_array_hash/range_easy'
 
 class FunctionTest < Test::Unit::TestCase
   def test_range1

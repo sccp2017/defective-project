@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/04_array/validate_isbn10'
+require_relative '../../src/04_array_hash/validate_isbn10_hard'
 
 class ArrayTest < Test::Unit::TestCase
   def test_isbn10_true_num
