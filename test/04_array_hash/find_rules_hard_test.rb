@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/04_array/find_rules_hard'
+require_relative '../../src/04_array_hash/find_rules_hard'
 
 def apply_rules(text, rules)
   rules.each{|rule|
