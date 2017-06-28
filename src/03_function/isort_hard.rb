@@ -3,7 +3,7 @@
 
 # insert(3, [1, 2, 4, 5]) -> [1, 2, 3, 4, 5] 
 def insert(x, arr)
-  if arr == []
+  if arr.empty?
     [x]
   else
     head, *tail = arr
