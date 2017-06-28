@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/04_array/intersect_hard'
+require_relative '../../src/04_array_hash/intersect_hard'
 
 class FunctionTest < Test::Unit::TestCase
   def test_intersect1
