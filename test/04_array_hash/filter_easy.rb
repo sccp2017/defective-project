@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../../src/04_array_hash/filter'
+require_relative '../../src/04_array_hash/filter_easy'
 
 class FunctionTest < Test::Unit::TestCase
   def test_filter1
