@@ -5,4 +5,11 @@
 # 15        // sum
 
 def complex_sum(n, arr)
+  sum = 0
+  for x in arr 
+    if x%2 == 1
+      sum += x + n
+    end
+  end
+  sum
 end
