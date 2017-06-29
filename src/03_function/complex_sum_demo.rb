@@ -5,4 +5,9 @@
 # 15        // sum
 
 def complex_sum(n, arr)
+  sum = 0
+  for i in arr
+    sum += if i.odd? then i + n else 0 end
+  end
+  sum
 end
