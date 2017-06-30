@@ -1,15 +1,14 @@
 # hint: use .class
 
 def nest_sum(arr)
-  sum = 0
-  for i in arr do
-    if i.class == Fixnum then
-      sum = sum + i
-    elsif i.class == Array then
-      for d in i do
-        sum = sum + d
-      end
-    end
+  if arr.empty?
+    0
+  else
+    head , *tail =arr
+    (if head.class == Array
+      nest_sum(head)
+    else head)
+      + nest_sum(tail)
   end
   sum
 end
