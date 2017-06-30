@@ -1,3 +1,3 @@
 def cipher(input)
-  'aaa'
+  input.tr("A-Z","D-ZABC")
 end
