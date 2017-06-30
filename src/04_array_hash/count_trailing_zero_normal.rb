@@ -3,9 +3,9 @@ def count_trailing_zero(num)
        .chars
        .inject(0){ |acc, x|
             if x == '1'
-                acc = 0
+                0
             else
-                acc += 1
+                acc + 1
             end
         }
 end
