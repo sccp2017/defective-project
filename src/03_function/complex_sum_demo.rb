@@ -5,4 +5,9 @@
 # 15        // sum
 
 def complex_sum(n, arr)
+  sum = 0
+  for i in arr
+    sum += i + n unless i % 2 == 0
+  end
+  sum
 end
