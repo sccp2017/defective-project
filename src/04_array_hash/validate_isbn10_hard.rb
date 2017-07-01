@@ -1,7 +1,7 @@
 def validate_isbn10(isbn)
-    head = isbn.chars[0, 9]
-    sum = 0
-    head.each_with_index{|item, i| sum += item.to_i * (10 - i)}
+    prefix = isbn.chars[0, 9].map{|x| x.to_i}
+    nums = (2..10).to_a.reverse
+    sum = prefix.zip(nums).map{|x| x.inject(:*)}.inject(:+)
     bottom = if isbn.chars[-1] == 'X'
                  10
              else
