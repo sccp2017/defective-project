@@ -1,2 +1,2 @@
-def family(hash)
+def family(families)
 end
