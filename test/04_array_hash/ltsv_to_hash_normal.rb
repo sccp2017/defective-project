@@ -3,11 +3,9 @@ require_relative '../../src/04_array_hash/ltsv_to_hash_normal'
 
 class FunctionTest < Test::Unit::TestCase
   def test_ltsv2hash_1
-    line = 'time:[28/Feb/2013:12:00:00 +0900]	host:192.168.0.1	req:GET /list HTTP/1.1	status:200	size:5316	referer:-	ua:Mozilla/5.0	taken:9789	isrobot:1	dos:-	harddos:-	cache:-'
-
+    line = 'host:192.168.0.1	req:GET /list HTTP/1.1	status:200	size:5316	referer:-	ua:Mozilla/5.0	taken:9789	isrobot:1	dos:-	harddos:-	cache:-'
     actual = ltsv2hash(line)
     expected = {
-      'time' => '[28/Feb/2013:12:00:00 +0900]',
       'host' => '192.168.0.1',
       'req' => 'GET /list HTTP/1.1',
       'status' => '200',
