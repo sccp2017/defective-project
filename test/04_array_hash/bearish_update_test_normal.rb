@@ -42,7 +42,7 @@ class TypeTest < Test::Unit::TestCase
     assert_equal expected, actual
   end
   
-  def test_bearish_update_cond4
+  def test_bearish_update_cond5
     actual = bearish_update(
       {a: 0, b: 1, c: 5},
       {c: 4, a: -1, d: 3}
