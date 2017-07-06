@@ -7,8 +7,6 @@ def nest_sum(arr)
     head , *tail =arr
     (if head.class == Array
       nest_sum(head)
-    else head)
-      + nest_sum(tail)
+    else head end)　+ nest_sum(tail)
   end
-  sum
 end
