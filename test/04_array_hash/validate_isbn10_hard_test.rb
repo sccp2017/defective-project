@@ -14,13 +14,13 @@ class ArrayTest < Test::Unit::TestCase
     assert_equal expected, actual
   end
 
-  def test_isbn10_true_X
+  def test_isbn10_true_x
     actual = validate_isbn10('409180568X')
     expected = true
     assert_equal expected, actual
   end
 
-  def test_isbn10_false_X
+  def test_isbn10_false_x
     actual = validate_isbn10('509180568X')
     expected = false
     assert_equal expected, actual
