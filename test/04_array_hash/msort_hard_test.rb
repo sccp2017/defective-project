@@ -38,8 +38,8 @@ class ArrayTest < Test::Unit::TestCase
   end
 
   def test_msort_cond6
-    actual = msort(%w(C CC B AA AD A))
-    expected = %w(A AA AD B C CC)
+    actual = msort(%w[C CC B AA AD A])
+    expected = %w[A AA AD B C CC]
 
     assert_equal expected, actual
   end
