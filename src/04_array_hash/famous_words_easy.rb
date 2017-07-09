@@ -8,9 +8,14 @@ hash table definitions
 =end
 def famous_words(word)
   response_list = {
-    OK:'Google',
+    "OK" => "Google",
+    "Hey" => "Siri",
+    "Boys" => "Be ambitious",
+    "Yes" => "高須クリニック",
+    "Kankan" => "Mikan"
     # add more hashes here
   }
+
   # don't change below
   response_list[word]
 end
