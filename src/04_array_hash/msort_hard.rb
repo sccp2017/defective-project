@@ -12,25 +12,33 @@
 # [1, 2, 5, 4, 6, 3]
 
 def merge(arr1, arr2)
-    if arr1.empty? && arr2.empty?
-        []
+    if arr1.empty?
+        arr2
+    elsif arr2.empty?
+        arr1
     else
         head1, *tail1 = arr1
         head2, *tail2 = arr2
-        if head1 < head2
+        if head1 <= head2
             [head1] + merge(tail1, arr2)
         else
-            [head2] + merge(arr1, tail2);
+            [head2] + merge(arr1, tail2)
         end
     end
 end
 
 def msort(arr)
-    top = arr[0, arr.size/2]
-    bottom = arr[arr.size/2, arr.size]
-    if arr.size <= 3
-        merge(top, bottom)
+    if arr.empty?
+        []
+    elsif arr.length == 1
+        [arr[0]]
     else
-        msort(top) + msort(bottom)
+        n = arr.length / 2
+        top = arr.take(n)
+        bottom = arr.drop(n)
+        merge(msort(top), msort(bottom))
     end
 end
+
+p msort(%w(AA A B CC CB BB));
+p (%w(AA A B CC CB BB)).sort
