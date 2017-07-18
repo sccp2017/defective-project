@@ -39,6 +39,3 @@ def msort(arr)
         merge(msort(top), msort(bottom))
     end
 end
-
-p msort(%w(AA A B CC CB BB));
-p (%w(AA A B CC CB BB)).sort
