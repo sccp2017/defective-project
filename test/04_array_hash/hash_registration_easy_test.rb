@@ -7,7 +7,7 @@ class FunctionTest < Test::Unit::TestCase
     expected = { Hoge: 'Foo' }
 
     assert_equal expected, actual
-    assert_equal expexted[:Hoge], actual[:Hoge]
+    assert_equal expected[:Hoge], actual[:Hoge]
   end
 
   def test_hash_registration_easy2
@@ -15,7 +15,7 @@ class FunctionTest < Test::Unit::TestCase
     expected = { Dont: 'Move' }
 
     assert_equal expected, actual
-    assert_equal expexted[:Dont], actual[:Dont]
+    assert_equal expected[:Dont], actual[:Dont]
   end
 
   def test_hash_registration_easy3
@@ -23,7 +23,7 @@ class FunctionTest < Test::Unit::TestCase
     expected = { KeyOnly1: false }
 
     assert_equal expected, actual
-    assert_equal expexted[:KeyOnly1], actual[:KeyOnly1]
+    assert_equal expected[:KeyOnly1], actual[:KeyOnly1]
   end
 
   def test_hash_registration_easy4
@@ -31,7 +31,7 @@ class FunctionTest < Test::Unit::TestCase
     expected = { KeyOnly2: false }
 
     assert_equal expected, actual
-    assert_equal expexted[:KeyOnly2], actual[:KeyOnly2]
+    assert_equal expected[:KeyOnly2], actual[:KeyOnly2]
   end
 
 end

@@ -28,7 +28,7 @@ class TypeTest < Test::Unit::TestCase
 
     actual = need2by(already, sell)
 
-    expected = [3, 6, 8, 15]
+    expected = [3, 15]
     assert_equal actual, expected
   end
 end
