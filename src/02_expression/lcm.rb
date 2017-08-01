@@ -1,5 +1,5 @@
 def lcm(a, b)
-  judge = a < b ? a : b
+   a < b ? a : b
   if a < b
     a * b/gcd(a,b)
   else
